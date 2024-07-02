@@ -16,7 +16,7 @@ if cap.isOpened():                                  # checking capture object in
         ret, frame = cap.read()                     # reading frame from the camera
 
         if not ret:
-            print('Cannot read frame from the camera.')
+            print('cannot read frame from the camera.')
             break
 
         cv2.imshow('camera-recording', frame)       # displaying the frame
@@ -28,7 +28,7 @@ if cap.isOpened():                                  # checking capture object in
 
     out.release()                                   # releasing the video writer object
 else:
-    print("Cannot open the camera.")                # capture object initialization failed
+    print("cannot open the camera.")                # capture object initialization failed
 
 cap.release()                                       # releasing the camera
 cv2.destroyAllWindows()                             # closing all OpenCV windows
