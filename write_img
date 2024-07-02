@@ -1,0 +1,10 @@
+import cv2
+
+img_file_path = '/home/user/Downloads/example1.jpeg'
+save_img_file_path = '/home/user/Downloads/gray_example1.jpeg'
+
+img = cv2.imread(img_file_path, cv2.IMREAD_GRAYSCALE)            # image reading in grayscale
+cv2.imshow('IMG', img)                                           # image showing
+cv2.imwrite(save_img_file_path, img)                             # image writing
+cv2.waitKey()                                                    # waiting for a key press event
+cv2.destroyAllWindows()                                          # closing windows all at once
